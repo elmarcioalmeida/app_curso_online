@@ -1,0 +1,22 @@
+<h1>Bem-vindo ao nosso site!</h1>
+
+<p>Esta é a página de boas-vindas. Aqui estão alguns links úteis:</p>
+
+<ul>
+  <li><%= link_to 'Sobre Nós', about_path %></li>
+  <li><%= link_to 'Nossos Certificados', certificates_path %></li>
+</ul>
+
+
+<div>
+  <h3>Principais Cursos</h3>
+  <ul>
+    <% if @theme && @subthemes %>
+      <% @subthemes.each do |subtheme| %>
+        <li><%= link_to subtheme.name, theme_subtheme_path(@theme, subtheme) %></li>
+      <% end %>
+    <% else %>
+      <li>Nenhum subtema encontrado para o tema selecionado.</li>
+    <% end %>
+  </ul>
+</div>

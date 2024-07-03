@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../javascript/stylesheets/application.css"],
+  "sourcesContent": ["/* app/javascript/stylesheets/application.css */\r\nbody {\r\n    background-color: #f8f9fa;\r\n    font-family: Arial, sans-serif;\r\n  }\r\n  "],
+  "mappings": ";AACA;AACI;AACA;AAAA;",
+  "names": []
+}
